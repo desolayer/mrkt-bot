@@ -8,7 +8,7 @@ MRKT_TOKEN = os.environ.get("MRKT_TOKEN", "1723deca-50dd-457c-ae7a-b314fe9fa5ca"
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 CHAT_ID = os.environ.get("CHAT_ID", "")
 DISCOUNT_THRESHOLD = 0.95
-SCAN_INTERVAL = 120
+SCAN_INTERVAL = 30
 
 MRKT_HEADERS = {
     "Authorization": MRKT_TOKEN,
