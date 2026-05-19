@@ -3,9 +3,11 @@ import time
 from datetime import datetime
 
 # ===== НАСТРОЙКИ =====
-MRKT_TOKEN = "1723deca-50dd-457c-ae7a-b314fe9fa5ca"  # твой токен MRKT
-BOT_TOKEN = "8883717867:AAE2rwbexgDhai0R3CNYY4bbWa6sZmo4KAc"                 # токен от @BotFather
-CHAT_ID = "1309707777"             # твой ID от @userinfobot
+import os
+
+MRKT_TOKEN = os.environ.get("MRKT_TOKEN", "1723deca-50dd-457c-ae7a-b314fe9fa5ca")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+CHAT_ID = os.environ.get("CHAT_ID", "")
 DISCOUNT_THRESHOLD = 0.95  # алерт если цена < 95% от флора
 SCAN_INTERVAL = 120  # сканировать каждые 120 секунд
 # =====================
